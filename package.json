@@ -1,0 +1,12 @@
+{
+  "name": "acme",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@7.27.0",
+  "scripts": {
+    "build": "tsc --build --force"
+  },
+  "devDependencies": {
+    "typescript": "4.9.5"
+  }
+}
