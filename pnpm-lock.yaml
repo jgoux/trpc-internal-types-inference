@@ -8,49 +8,30 @@ importers:
     devDependencies:
       typescript: 4.9.5
 
-  packages/client:
+  packages/cli:
     specifiers:
-      '@acme/server': workspace:*
-      '@trpc/client': 10.11.1
-      '@trpc/server': 10.11.1
+      '@acme/sdk': workspace:*
       '@tsconfig/node-lts-strictest-esm': 18.12.1
       '@types/node': 18.13.0
       typescript: 4.9.5
     dependencies:
-      '@acme/server': link:../server
-      '@trpc/client': 10.11.1_@trpc+server@10.11.1
-      '@trpc/server': 10.11.1
+      '@acme/sdk': link:../sdk
     devDependencies:
       '@tsconfig/node-lts-strictest-esm': 18.12.1
       '@types/node': 18.13.0
       typescript: 4.9.5
 
-  packages/server:
+  packages/sdk:
     specifiers:
-      '@trpc/server': 10.11.1
       '@tsconfig/node-lts-strictest-esm': 18.12.1
       '@types/node': 18.13.0
       typescript: 4.9.5
-    dependencies:
-      '@trpc/server': 10.11.1
     devDependencies:
       '@tsconfig/node-lts-strictest-esm': 18.12.1
       '@types/node': 18.13.0
       typescript: 4.9.5
 
 packages:
-
-  /@trpc/client/10.11.1_@trpc+server@10.11.1:
-    resolution: {integrity: sha512-6aHY27YomzyUAlKhJE4jJulzDjc6vAKAKoWqAmoYbEEhApvyDrMo52bdYqqsukjxvA/L/uPhjOcPU5OsO+x+pA==}
-    peerDependencies:
-      '@trpc/server': 10.11.1
-    dependencies:
-      '@trpc/server': 10.11.1
-    dev: false
-
-  /@trpc/server/10.11.1:
-    resolution: {integrity: sha512-7FnvuaNsSl6HLloh0a297McS4yjhbqg/bw1h/XOAKduNPUQwXNmJf48X1PAsD8ODtO1Rrjz9TeynJD7uCEn0xQ==}
-    dev: false
 
   /@tsconfig/node-lts-strictest-esm/18.12.1:
     resolution: {integrity: sha512-LvBLmaC6Q/txTddLc11OeMHF9XjJFzlilkETJuvBlUvHy9pPiMsoH3nxWZM1FMSO53zp4mJP6gzOzxKEq0me7Q==}
