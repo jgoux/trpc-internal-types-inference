@@ -8,5 +8,15 @@
   },
   "devDependencies": {
     "typescript": "4.9.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@esbuild-kit/cjs-loader": "link:../cjs-loader",
+      "@esbuild-kit/esm-loader": "link:../esm-loader"
+    }
+  },
+  "dependencies": {
+    "@esbuild-kit/cjs-loader": "*",
+    "@esbuild-kit/esm-loader": "*"
   }
 }
